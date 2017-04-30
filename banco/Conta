@@ -1,0 +1,39 @@
+package banco;
+
+public class Conta{
+    String titular;
+    double saldo;
+    
+    public Conta(String titular, double saldo){
+        this.titular = titular;
+        this.saldo = saldo;
+    }
+    
+    public void setSaldo(double saldo){
+        this.saldo = saldo;
+    }
+    
+    public double getSaldo(){
+        return saldo;
+    }
+    
+    public String getTitular(){
+        return titular;
+    }
+    
+    public String toString(){
+        return "Titular: "+this.titular+", Saldo: "+saldo+".";
+    }
+    
+    public int compareTo(Conta conta){
+        int ret = 0;
+        if(this.saldo < conta.getSaldo()){
+            ret = -1;
+        }else if(this.saldo < conta.getSaldo()){
+            ret = 1;
+        }else{
+            ret = 0;
+        }
+        return ret;
+    }
+}
