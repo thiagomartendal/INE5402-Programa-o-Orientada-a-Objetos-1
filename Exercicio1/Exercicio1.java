@@ -1,6 +1,6 @@
 package Exercicio1;
 
-public class Exercicio1{
+public class Exercicio1 {
     public static void main(String[] args){
         Media media = new Media();
         media.setProva1(5);
