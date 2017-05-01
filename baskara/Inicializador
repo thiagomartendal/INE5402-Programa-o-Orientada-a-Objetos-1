@@ -1,0 +1,15 @@
+package baskara;
+
+import javax.swing.JOptionPane;
+
+public class Inicializador{
+    public String init(){
+        int a = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor de A: "));
+        int b = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor de B: "));
+        int c = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor de C: "));
+        Calcular calc = new Calcular();
+        String baskara = calc.Baskara(a, b, c);
+        String resultado = String.valueOf(baskara);
+        return resultado;
+    }
+}
